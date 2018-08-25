@@ -1,0 +1,24 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.folder {
+    background: whitesmoke url(../res/img/folder-closed.png) repeat 0 0;
+    background-size: cover;
+    border-radius: 10px;
+    /*box-shadow: 0px 5px 5px 0px #888888;*/
+    float: left;
+    height: 133px;
+    margin: 10px 10px 10px 10px;
+    padding: 0px;
+    width: 10%;
+}
+
+.folder-name {
+    bottom: 0px;
+    text-justify: inter-word;
+}
