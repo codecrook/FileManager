@@ -41,8 +41,53 @@ body {
     background-size: cover;
 }
 
-.file {
-    background: url(../res/img/new-file.png) repeat 0 0;
+.file-new {
+    background: url(../res/img/file.png) repeat 0 0;
+    background-size: cover;
+}
+
+.file-audio {
+    background: url(../res/img/audio-file.png) repeat 0 0;
+    background-size: cover;
+}
+
+.file-video {
+    background: url(../res/img/video-file.png) repeat 0 0;
+    background-size: cover;
+}
+
+.file-image {
+    background: url(../res/img/image-file.png) repeat 0 0;
+    background-size: cover;
+}
+
+.file-text {
+    background: url(../res/img/text-file.png) repeat 0 0;
+    background-size: cover;
+}
+
+.file-pdf {
+    background: url(../res/img/pdf-file.png) repeat 0 0;
+    background-size: cover;
+}
+
+.file-docs {
+    background: url(../res/img/docs-file.png) repeat 0 0;
+    background-size: cover;
+}
+
+.file-sheet {
+    background: url(../res/img/sheets-file.png) repeat 0 0;
+    background-size: cover;
+}
+
+.file-unknown {
+    background: url(../res/img/unknown-file.png) repeat 0 0;
+    background-size: cover;
+}
+
+.file-ppt {
+    background: url(../res/img/ppt-file.png) repeat 0 0;
     background-size: cover;
 }
 

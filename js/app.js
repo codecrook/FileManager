@@ -42,9 +42,35 @@
         let innerContent = mainContainer.innerHTML;
         let fileName = prompt('File Name:', 'new file');
 
-        if (!fileName) return; //won't create folder if cancel is clicked on the prompt
+        let fileArray = fileName.split('.');
+        let fileExtension = fileArray[fileArray.length - 1];
+        let fileType = 'new';
+
+        if (fileExtension == '') {
+            fileType = 'new';
+        }else if (fileExtension == 'mp3' || fileExtension == 'wav') {
+            fileType = 'audio';
+        } else if (fileExtension == 'mp4' || fileExtension == '3gp' || fileExtension == 'mov' || fileExtension == 'avi') {
+            fileType = 'video';
+        } else if (fileExtension == 'txt') {
+            fileType = 'text';
+        } else if (fileExtension == 'doc' || fileExtension == 'docx' || fileExtension == 'odt') {
+            fileType = 'docs';
+        } else if (fileExtension == 'pdf') {
+            fileType = 'pdf';
+        } else if (fileExtension == 'xls' || fileExtension == 'xlsx' || fileExtension == 'xlsb' || fileExtension == 'xlsm' ) {
+            fileType = 'sheet';
+        } else if (fileExtension == 'ppt' || fileExtension == 'pptx') {
+            fileType = 'ppt';
+        } else if (fileExtension == 'jpg' || fileExtension == 'jpeg' || fileExtension == 'png' || fileExtension == 'svg' ) {
+            fileType = 'image';
+        } else {
+            fileType = 'unknown';
+        }
+
+        if (!fileName) return; //won't create file if cancel is clicked on the prompt or filename is empty
         
-        let newFileCode = `<div class="file-all file">
+        let newFileCode = `<div class="file-all file-${fileType}">
                                 <span class="folder-name">${fileName}</span>
                             </div>`;
         
