@@ -21,9 +21,8 @@ body {
     width: 100%;
 }
 
-.folder {
-    /*background: url(../res/img/folder-closed.png) repeat 0 0;*/
-    /*background-size: cover;*/
+.folder,
+.file-all {
     float: left;
     height: 133px;
     margin: 10px 10px 10px 10px;
@@ -42,12 +41,18 @@ body {
     background-size: cover;
 }
 
+.file {
+    background: url(../res/img/new-file.png) repeat 0 0;
+    background-size: cover;
+}
+
 .selected-item {
     background-color: rgba(127, 255, 212, 0.4);
     border-radius: 5px;
 }
 
-.folder-name {
+.folder-name,
+.file-name {
     bottom: 10px;
     font-family: 'Roboto', sans-serif;
     left: 5px;
@@ -64,4 +69,49 @@ body {
     font-size: 2em;
     position: fixed;
     right: 10px;
+}
+
+.create-new-popup {
+    background-color: rgba(255,192,203,0.7);
+    border-radius: 6px;
+    bottom: 45px;
+    cursor: pointer;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    margin-left: -80px;
+    padding: 8px 0;
+    position: absolute;
+    right: 5px;
+    text-align: center;
+    visibility: hidden;
+    width: 160px;
+    z-index: 1;
+}
+
+.create-new-popup::after {
+    border-color: rgba(255,192,203,0.7) transparent transparent transparent;
+    border-style: solid;
+    border-width: 5px;
+    content: "";
+    left: 80%;
+    margin-left: -5px;
+    position: absolute;
+    top: 100%;
+}
+
+.show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
 }
