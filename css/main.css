@@ -104,6 +104,24 @@ body {
     position: absolute;
 }
 
+.selected-file-display {
+    background-color: #555;
+    border-radius: 2px;
+    bottom: 2px;
+    box-shadow: #000 1px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    left: 2px;
+    max-height: 30px;
+    max-width: 400px;
+    opacity: 0.7;
+    overflow: hidden;
+    padding: 5px;
+    position: absolute;
+    visibility: hidden;
+}
+
 .new-button {
     background: none;
     border: 0;
@@ -111,7 +129,7 @@ body {
     box-shadow: none;
     clear: both;
     color: blue;
-    font-size: 2em;
+    font-size: 2.5em;
     position: fixed;
     right: 10px;
 }
